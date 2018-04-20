@@ -10,3 +10,5 @@ COPY bin/entrypoint.sh /devpi-server/entrypoint.sh
 EXPOSE 3141
 
 ENTRYPOINT ["/devpi-server/entrypoint.sh"]
+
+RUN echo OK
