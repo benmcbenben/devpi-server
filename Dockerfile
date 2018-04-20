@@ -5,7 +5,7 @@ ENV container docker
 
 RUN DEBIAN_FRONTEND=noninteractive \
   apt-get update \
-  && apt-get install python-pip \
+  && apt-get install -y python-pip \
     curl \
     net-tools \
     bash-completion
