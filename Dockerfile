@@ -4,8 +4,4 @@ RUN pip install -q -U devpi-server
 
 EXPOSE 3141
 
-RUN mkdir /tmp/devpi
-
-RUN devpi-server --init --serverdir=/tmp/devpi
-
-RUN devpi-server --start --serverdir=/tmp/devpi
+RUN mkdir /tmp/devpi && devpi-server --init --serverdir=/tmp/devpi && devpi-server --start --serverdir=/tmp/devpi
