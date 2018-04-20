@@ -8,5 +8,4 @@ RUN mkdir /tmp/devpi
 
 RUN devpi-server --init --serverdir=/tmp/devpi
 
-ENTRYPOINT ["devpi-server"]
-CMD ["--start", "--serverdir=/tmp/devpi"]
+ENTRYPOINT ["devpi-server --start --serverdir=/tmp/devpi"]
